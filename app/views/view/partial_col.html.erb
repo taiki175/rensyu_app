@@ -1,0 +1,6 @@
+<h1>View#partial_col</h1>
+<p>Find me in app/views/view/partial_col.html.erb</p>
+<div id = "list">
+	<%= render partial: 'books/book' , collection: @books,
+	locals: { type: :details } %>
+</div>

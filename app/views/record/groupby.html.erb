@@ -1,0 +1,14 @@
+<h1>Record#groupby</h1>
+<p>Find me in app/views/record/groupby.html.erb</p>
+<table border="1">
+<tr>
+  <th>出版社</th><th>価格</th>
+</tr>
+<% @books.each do |book| %>
+<%= debug(book) %>
+  <tr>
+    <td><%= book.publish %></td>
+    <td><%= book.avg_price %>円</td>
+  </tr>
+<% end %>
+</table>
